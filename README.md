@@ -1,4 +1,4 @@
-# ICS maker
+# ICS.js
 ## Install
 ### Dependencies
 This library uses functionality from jQuery and Moment, so if you are not already using them in your project, please add these two lines in the HTML head.
