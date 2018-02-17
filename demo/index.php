@@ -12,6 +12,8 @@
 
 <body>
     <button id="ics">Create an iCal event</button>
+    <br />
+    <button id="ics-multiple">Create multiple iCal events</button>
 
 	<script type="text/javascript">
 		$(document).ready(function() {
@@ -23,8 +25,33 @@
 					title: 'Dentist',
 					description: 'Going to dentist to fix my tooth',
 					location: 'Dentist office',
-					begin: '2018-02-02 12:00:00',
-					end: '2018-02-02 13:00:00'
+					begin: '2018-02-05 12:00:00',
+					end: '2018-02-05 13:00:00'
+				});
+
+		        console.log(cal.calendar());
+
+		        cal.download('event');
+		    });
+
+		    $('#ics-multiple').click(function() {
+
+		        var cal = ics();
+		        
+				cal.addEvent({
+					title: 'Dentist',
+					description: 'Going to dentist to fix my tooth',
+					location: 'Dentist office',
+					begin: '2018-02-08 12:00:00',
+					end: '2018-02-08 13:00:00'
+				});
+
+				cal.addEvent({
+					title: 'Football practice',
+					description: 'Practice my awesome football skills',
+					location: 'The football field',
+					begin: '2018-02-10 18:00:00',
+					end: '2018-02-10 20:00:00'
 				});
 
 		        console.log(cal.calendar());
