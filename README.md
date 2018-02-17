@@ -1,4 +1,4 @@
-# ICS
+# ICS maker
 ## Install
 ### Dependencies
 This library uses functionality from jQuery and Moment, so if you are not already using them in your project, please add these two lines in the HTML head.
@@ -6,6 +6,7 @@ This library uses functionality from jQuery and Moment, so if you are not alread
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js" integrity="sha256-ABVkpwb9K9PxubvRrHMkk6wmWcIHUE9eBxNZLXYQ84k=" crossorigin="anonymous"></script>
 ```
+In addition, it also uses [FileSaver.js](https://github.com/eligrey/FileSaver.js) to save the file. The code for FileSaver.js is included in the file  `dist/ics.filesaver.min.js` for convenience. If you do not wish to use that file or it is out of date, please manually include `FileSaver.js` before loading  `ics.min.js`
 
 ## Example Usage
 1) Create an iCalendar event:
